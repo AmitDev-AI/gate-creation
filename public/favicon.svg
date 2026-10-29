@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="GATE Prep Hub">
+  <rect width="512" height="512" rx="112" fill="#0b1220"/>
+  <g fill="#f59e0b">
+    <rect x="112" y="150" width="288" height="62"/>
+    <rect x="168" y="212" width="60" height="162"/>
+    <rect x="300" y="212" width="60" height="162"/>
+  </g>
+</svg>

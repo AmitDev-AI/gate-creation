@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>GATE Prep Hub</title>
+    <meta
+      name="description"
+      content="Free, offline-first GATE preparation: topic practice, full mock tests with GATE marking, weak-topic analysis and a study planner."
+    />
+    <meta name="theme-color" content="#0b1220" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <script>
+      // Apply the stored theme before first paint so there is no light flash.
+      try {
+        var stored = localStorage.getItem('gate.theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var dark = stored === 'dark' || ((!stored || stored === 'system') && prefersDark);
+        if (dark) document.documentElement.classList.add('dark');
+        document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+      } catch (error) {
+        /* Private mode with storage blocked: fall back to the light theme. */
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <noscript>GATE Prep Hub needs JavaScript enabled to run. All your data stays on this device.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
