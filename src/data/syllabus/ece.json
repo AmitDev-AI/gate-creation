@@ -1,0 +1,98 @@
+{
+  "branch": "ECE",
+  "name": "Electronics and Communication Engineering",
+  "version": "2026.1",
+  "subjects": [
+    {
+      "id": "ece-em",
+      "name": "Engineering Mathematics",
+      "weightage": 15,
+      "topics": [
+        { "id": "ece-em-linear", "name": "Linear Algebra", "subtopics": ["Matrices", "Eigenvalues", "Rank"], "expectedHours": 8 },
+        { "id": "ece-em-calculus", "name": "Calculus", "subtopics": ["Limits", "Maxima and minima", "Multiple integrals"], "expectedHours": 8 },
+        { "id": "ece-em-de", "name": "Differential Equations", "subtopics": ["First order", "Higher order", "Partial differential equations"], "expectedHours": 7 },
+        { "id": "ece-em-vector", "name": "Vector Analysis", "subtopics": ["Gradient", "Divergence", "Curl", "Stokes theorem"], "expectedHours": 6 },
+        { "id": "ece-em-complex", "name": "Complex Analysis", "subtopics": ["Analytic functions", "Cauchy integral", "Residues"], "expectedHours": 6 },
+        { "id": "ece-em-probability", "name": "Probability", "subtopics": ["Random variables", "Distributions", "Conditional probability"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "ece-nss",
+      "name": "Networks, Signals and Systems",
+      "weightage": 15,
+      "topics": [
+        { "id": "ece-nss-network", "name": "Network Analysis", "subtopics": ["Node and mesh analysis", "Thevenin", "Norton", "Transient response"], "expectedHours": 8 },
+        { "id": "ece-nss-ct", "name": "Continuous-Time Signals", "subtopics": ["Fourier series", "Fourier transform", "Laplace transform"], "expectedHours": 8 },
+        { "id": "ece-nss-lti", "name": "LTI Systems", "subtopics": ["Convolution", "Impulse response", "Stability"], "expectedHours": 7 },
+        { "id": "ece-nss-dt", "name": "Discrete-Time Signals", "subtopics": ["Sampling", "Z transform", "DTFT"], "expectedHours": 7 }
+      ]
+    },
+    {
+      "id": "ece-ed",
+      "name": "Electronic Devices",
+      "weightage": 8,
+      "topics": [
+        { "id": "ece-ed-semiconductor", "name": "Semiconductor Physics", "subtopics": ["Carrier concentration", "Drift and diffusion", "Fermi level"], "expectedHours": 6 },
+        { "id": "ece-ed-pn", "name": "PN Junction", "subtopics": ["Built-in potential", "I-V characteristics", "Breakdown"], "expectedHours": 5 },
+        { "id": "ece-ed-bjt", "name": "Bipolar Junction Transistor", "subtopics": ["Regions of operation", "Current gain", "Early effect"], "expectedHours": 6 },
+        { "id": "ece-ed-mos", "name": "MOSFET", "subtopics": ["Threshold voltage", "I-V characteristics", "Body effect"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "ece-ac",
+      "name": "Analog Circuits",
+      "weightage": 10,
+      "topics": [
+        { "id": "ece-ac-diode", "name": "Diode Circuits", "subtopics": ["Rectifiers", "Clippers", "Clampers", "Zener regulators"], "expectedHours": 5 },
+        { "id": "ece-ac-bias", "name": "Transistor Biasing", "subtopics": ["Q-point", "Stability", "Current mirrors"], "expectedHours": 5 },
+        { "id": "ece-ac-amp", "name": "Amplifiers", "subtopics": ["CE, CB, CC", "Frequency response", "Feedback"], "expectedHours": 7 },
+        { "id": "ece-ac-opamp", "name": "Operational Amplifiers", "subtopics": ["Ideal op-amp", "Inverting and non-inverting", "Oscillators"], "expectedHours": 7 }
+      ]
+    },
+    {
+      "id": "ece-dc",
+      "name": "Digital Circuits",
+      "weightage": 10,
+      "topics": [
+        { "id": "ece-dc-number", "name": "Number Systems and Codes", "subtopics": ["Binary arithmetic", "Gray code", "BCD"], "expectedHours": 4 },
+        { "id": "ece-dc-comb", "name": "Combinational Circuits", "subtopics": ["Adders", "Multiplexers", "Decoders"], "expectedHours": 6 },
+        { "id": "ece-dc-seq", "name": "Sequential Circuits", "subtopics": ["Flip-flops", "Counters", "Shift registers"], "expectedHours": 7 },
+        { "id": "ece-dc-memory", "name": "Memory and Logic Families", "subtopics": ["SRAM", "DRAM", "ROM", "TTL and CMOS"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "ece-cs",
+      "name": "Control Systems",
+      "weightage": 12,
+      "topics": [
+        { "id": "ece-cs-model", "name": "System Modelling", "subtopics": ["Transfer functions", "Block diagrams", "Signal flow graphs"], "expectedHours": 6 },
+        { "id": "ece-cs-response", "name": "Time Response", "subtopics": ["First and second order", "Damping", "Steady-state error"], "expectedHours": 7 },
+        { "id": "ece-cs-stability", "name": "Stability", "subtopics": ["Routh-Hurwitz", "Root locus", "Bode plot"], "expectedHours": 8 },
+        { "id": "ece-cs-compensation", "name": "Compensation", "subtopics": ["Lead", "Lag", "PID control"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "ece-comm",
+      "name": "Communications",
+      "weightage": 15,
+      "topics": [
+        { "id": "ece-comm-random", "name": "Random Processes", "subtopics": ["Noise", "Autocorrelation", "Power spectral density"], "expectedHours": 6 },
+        { "id": "ece-comm-analog", "name": "Analog Communication", "subtopics": ["AM", "FM", "Noise in receivers"], "expectedHours": 7 },
+        { "id": "ece-comm-sampling", "name": "Sampling and Quantization", "subtopics": ["Nyquist rate", "PCM", "Quantization noise"], "expectedHours": 6 },
+        { "id": "ece-comm-digital", "name": "Digital Communication", "subtopics": ["ASK, FSK, PSK", "QAM", "Error probability"], "expectedHours": 8 },
+        { "id": "ece-comm-info", "name": "Information Theory", "subtopics": ["Entropy", "Channel capacity", "Coding"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "ece-emag",
+      "name": "Electromagnetics",
+      "weightage": 15,
+      "topics": [
+        { "id": "ece-emag-maxwell", "name": "Maxwell's Equations", "subtopics": ["Gauss law", "Faraday law", "Displacement current"], "expectedHours": 6 },
+        { "id": "ece-emag-wave", "name": "Plane Waves", "subtopics": ["Wave equation", "Polarization", "Intrinsic impedance"], "expectedHours": 7 },
+        { "id": "ece-emag-tl", "name": "Transmission Lines", "subtopics": ["Characteristic impedance", "VSWR", "Smith chart"], "expectedHours": 8 },
+        { "id": "ece-emag-wg", "name": "Waveguides and Antennas", "subtopics": ["Rectangular waveguide", "Dipole", "Gain"], "expectedHours": 7 }
+      ]
+    }
+  ]
+}

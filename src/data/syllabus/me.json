@@ -1,0 +1,112 @@
+{
+  "branch": "ME",
+  "name": "Mechanical Engineering",
+  "version": "2026.1",
+  "subjects": [
+    {
+      "id": "me-em",
+      "name": "Engineering Mathematics",
+      "weightage": 13,
+      "topics": [
+        { "id": "me-em-linear", "name": "Linear Algebra", "subtopics": ["Matrices", "Eigenvalues", "Rank"], "expectedHours": 7 },
+        { "id": "me-em-calculus", "name": "Calculus", "subtopics": ["Limits", "Maxima and minima", "Multiple integrals"], "expectedHours": 7 },
+        { "id": "me-em-de", "name": "Differential Equations", "subtopics": ["First order", "Higher order"], "expectedHours": 6 },
+        { "id": "me-em-numerical", "name": "Numerical Methods", "subtopics": ["Root finding", "Integration"], "expectedHours": 4 }
+      ]
+    },
+    {
+      "id": "me-fm",
+      "name": "Fluid Mechanics",
+      "weightage": 12,
+      "topics": [
+        { "id": "me-fm-properties", "name": "Fluid Properties", "subtopics": ["Viscosity", "Surface tension", "Compressibility"], "expectedHours": 5 },
+        { "id": "me-fm-statics", "name": "Fluid Statics", "subtopics": ["Manometry", "Buoyancy", "Pressure on surfaces"], "expectedHours": 6 },
+        { "id": "me-fm-dynamics", "name": "Fluid Dynamics", "subtopics": ["Bernoulli", "Continuity", "Momentum"], "expectedHours": 7 },
+        { "id": "me-fm-flow", "name": "Viscous Flow", "subtopics": ["Reynolds number", "Laminar pipe flow", "Major and minor losses"], "expectedHours": 7 }
+      ]
+    },
+    {
+      "id": "me-ht",
+      "name": "Heat Transfer",
+      "weightage": 12,
+      "topics": [
+        { "id": "me-ht-conduction", "name": "Conduction", "subtopics": ["Fourier law", "Composite walls", "Fins"], "expectedHours": 7 },
+        { "id": "me-ht-convection", "name": "Convection", "subtopics": ["Newton law", "Nusselt number", "Boundary layers"], "expectedHours": 7 },
+        { "id": "me-ht-radiation", "name": "Radiation", "subtopics": ["Stefan-Boltzmann", "Emissivity", "View factors"], "expectedHours": 6 },
+        { "id": "me-ht-hx", "name": "Heat Exchangers", "subtopics": ["LMTD", "Effectiveness-NTU"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "me-td",
+      "name": "Thermodynamics",
+      "weightage": 12,
+      "topics": [
+        { "id": "me-td-laws", "name": "Laws of Thermodynamics", "subtopics": ["First law", "Second law", "Entropy"], "expectedHours": 7 },
+        { "id": "me-td-cycles", "name": "Power Cycles", "subtopics": ["Carnot", "Rankine", "Brayton"], "expectedHours": 7 },
+        { "id": "me-td-gas", "name": "Ideal Gases", "subtopics": ["Processes", "Specific heats", "Mixtures"], "expectedHours": 6 },
+        { "id": "me-td-refrigeration", "name": "Refrigeration", "subtopics": ["Vapour compression", "COP"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "me-tom",
+      "name": "Theory of Machines",
+      "weightage": 9,
+      "topics": [
+        { "id": "me-tom-kinematics", "name": "Kinematics", "subtopics": ["Degrees of freedom", "Four-bar linkage", "Velocity analysis"], "expectedHours": 6 },
+        { "id": "me-tom-gears", "name": "Gears and Gear Trains", "subtopics": ["Gear ratio", "Epicyclic trains"], "expectedHours": 5 },
+        { "id": "me-tom-cam", "name": "Cams", "subtopics": ["Follower motion", "Pressure angle"], "expectedHours": 4 },
+        { "id": "me-tom-balancing", "name": "Balancing", "subtopics": ["Static balancing", "Dynamic balancing"], "expectedHours": 4 }
+      ]
+    },
+    {
+      "id": "me-vib",
+      "name": "Vibrations",
+      "weightage": 6,
+      "topics": [
+        { "id": "me-vib-free", "name": "Free Vibration", "subtopics": ["Natural frequency", "Damping ratio"], "expectedHours": 5 },
+        { "id": "me-vib-forced", "name": "Forced Vibration", "subtopics": ["Resonance", "Transmissibility"], "expectedHours": 4 }
+      ]
+    },
+    {
+      "id": "me-md",
+      "name": "Machine Design",
+      "weightage": 9,
+      "topics": [
+        { "id": "me-md-failure", "name": "Failure Theories", "subtopics": ["Von Mises", "Tresca", "Factor of safety"], "expectedHours": 6 },
+        { "id": "me-md-fatigue", "name": "Fatigue", "subtopics": ["S-N curve", "Stress concentration", "Goodman line"], "expectedHours": 6 },
+        { "id": "me-md-elements", "name": "Machine Elements", "subtopics": ["Shafts", "Bearings", "Bolted joints"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "me-sm",
+      "name": "Solid Mechanics",
+      "weightage": 11,
+      "topics": [
+        { "id": "me-sm-stress", "name": "Stress and Strain", "subtopics": ["Axial loading", "Thermal stress", "Poisson ratio"], "expectedHours": 7 },
+        { "id": "me-sm-bending", "name": "Bending", "subtopics": ["Shear force", "Bending moment", "Bending stress"], "expectedHours": 7 },
+        { "id": "me-sm-torsion", "name": "Torsion", "subtopics": ["Circular shafts", "Power transmission"], "expectedHours": 5 },
+        { "id": "me-sm-deflection", "name": "Deflection", "subtopics": ["Beam deflection", "Columns"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "me-mfg",
+      "name": "Manufacturing",
+      "weightage": 11,
+      "topics": [
+        { "id": "me-mfg-machining", "name": "Machining", "subtopics": ["Turning", "Cutting speed", "Tool life"], "expectedHours": 7 },
+        { "id": "me-mfg-welding", "name": "Welding", "subtopics": ["Arc welding", "Resistance welding", "Defects"], "expectedHours": 5 },
+        { "id": "me-mfg-casting", "name": "Casting", "subtopics": ["Sand casting", "Riser design", "Defects"], "expectedHours": 5 },
+        { "id": "me-mfg-forming", "name": "Forming", "subtopics": ["Rolling", "Forging", "Extrusion"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "me-mat",
+      "name": "Engineering Materials",
+      "weightage": 5,
+      "topics": [
+        { "id": "me-mat-metals", "name": "Metals and Alloys", "subtopics": ["Steel", "Cast iron", "Phase diagrams"], "expectedHours": 5 },
+        { "id": "me-mat-polymers", "name": "Polymers and Composites", "subtopics": ["Thermoplastics", "Thermosets", "Composites"], "expectedHours": 4 }
+      ]
+    }
+  ]
+}

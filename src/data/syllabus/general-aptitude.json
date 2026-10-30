@@ -1,0 +1,113 @@
+{
+  "branch": "GA",
+  "name": "General Aptitude",
+  "version": "2026.1",
+  "subjects": [
+    {
+      "id": "ga-verbal",
+      "name": "Verbal Aptitude",
+      "weightage": 25,
+      "topics": [
+        {
+          "id": "ga-verbal-vocab",
+          "name": "Vocabulary",
+          "subtopics": ["Synonyms", "Antonyms", "Word usage"],
+          "expectedHours": 4
+        },
+        {
+          "id": "ga-verbal-grammar",
+          "name": "Grammar and Usage",
+          "subtopics": ["Subject-verb agreement", "Tenses", "Articles and prepositions"],
+          "expectedHours": 4
+        },
+        {
+          "id": "ga-verbal-reading",
+          "name": "Reading Comprehension",
+          "subtopics": ["Main idea", "Inference", "Author's tone"],
+          "expectedHours": 4
+        }
+      ]
+    },
+    {
+      "id": "ga-quant",
+      "name": "Quantitative Aptitude",
+      "weightage": 35,
+      "topics": [
+        {
+          "id": "ga-quant-arithmetic",
+          "name": "Arithmetic",
+          "subtopics": ["Percentages", "Profit and loss", "Ratio and proportion", "Time, speed and distance"],
+          "expectedHours": 6
+        },
+        {
+          "id": "ga-quant-number",
+          "name": "Number Systems",
+          "subtopics": ["Factors and multiples", "Primes", "Remainders", "Averages"],
+          "expectedHours": 4
+        },
+        {
+          "id": "ga-quant-algebra",
+          "name": "Algebra",
+          "subtopics": ["Linear equations", "Quadratic equations", "Inequalities"],
+          "expectedHours": 4
+        },
+        {
+          "id": "ga-quant-geometry",
+          "name": "Geometry and Mensuration",
+          "subtopics": ["Triangles", "Circles", "Areas and volumes"],
+          "expectedHours": 4
+        },
+        {
+          "id": "ga-quant-data",
+          "name": "Data Interpretation",
+          "subtopics": ["Tables", "Bar charts", "Pie charts"],
+          "expectedHours": 4
+        }
+      ]
+    },
+    {
+      "id": "ga-analytical",
+      "name": "Analytical Aptitude",
+      "weightage": 25,
+      "topics": [
+        {
+          "id": "ga-analytical-series",
+          "name": "Sequences and Series",
+          "subtopics": ["Number series", "Letter series", "Pattern completion"],
+          "expectedHours": 3
+        },
+        {
+          "id": "ga-analytical-logic",
+          "name": "Logical Reasoning",
+          "subtopics": ["Syllogisms", "Blood relations", "Ordering and ranking"],
+          "expectedHours": 4
+        },
+        {
+          "id": "ga-analytical-puzzles",
+          "name": "Puzzles and Arrangements",
+          "subtopics": ["Seating arrangement", "Scheduling", "Grouping"],
+          "expectedHours": 4
+        }
+      ]
+    },
+    {
+      "id": "ga-spatial",
+      "name": "Spatial Aptitude",
+      "weightage": 15,
+      "topics": [
+        {
+          "id": "ga-spatial-figures",
+          "name": "Figure Reasoning",
+          "subtopics": ["Paper folding", "Mirror images", "Rotation"],
+          "expectedHours": 3
+        },
+        {
+          "id": "ga-spatial-3d",
+          "name": "Three-Dimensional Visualisation",
+          "subtopics": ["Solids", "Surface area", "Volume"],
+          "expectedHours": 3
+        }
+      ]
+    }
+  ]
+}

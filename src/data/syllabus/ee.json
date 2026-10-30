@@ -1,0 +1,114 @@
+{
+  "branch": "EE",
+  "name": "Electrical Engineering",
+  "version": "2026.1",
+  "subjects": [
+    {
+      "id": "ee-em",
+      "name": "Engineering Mathematics",
+      "weightage": 13,
+      "topics": [
+        { "id": "ee-em-linear", "name": "Linear Algebra", "subtopics": ["Matrices", "Eigenvalues", "Rank"], "expectedHours": 7 },
+        { "id": "ee-em-calculus", "name": "Calculus", "subtopics": ["Limits", "Maxima and minima", "Integration"], "expectedHours": 7 },
+        { "id": "ee-em-de", "name": "Differential Equations", "subtopics": ["First order", "Higher order", "Laplace transforms"], "expectedHours": 6 },
+        { "id": "ee-em-complex", "name": "Complex Variables", "subtopics": ["Analytic functions", "Residues"], "expectedHours": 5 },
+        { "id": "ee-em-probability", "name": "Probability and Statistics", "subtopics": ["Distributions", "Mean and variance"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "ee-ec",
+      "name": "Electric Circuits",
+      "weightage": 12,
+      "topics": [
+        { "id": "ee-ec-dc", "name": "DC Circuits", "subtopics": ["Node and mesh analysis", "Thevenin", "Superposition"], "expectedHours": 7 },
+        { "id": "ee-ec-ac", "name": "AC Circuits", "subtopics": ["Phasors", "Impedance", "Power factor"], "expectedHours": 7 },
+        { "id": "ee-ec-resonance", "name": "Resonance", "subtopics": ["Series resonance", "Parallel resonance", "Q factor"], "expectedHours": 5 },
+        { "id": "ee-ec-transient", "name": "Transient Analysis", "subtopics": ["RL", "RC", "RLC"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "ee-emf",
+      "name": "Electromagnetic Fields",
+      "weightage": 8,
+      "topics": [
+        { "id": "ee-emf-electro", "name": "Electrostatics", "subtopics": ["Coulomb law", "Gauss law", "Capacitance"], "expectedHours": 6 },
+        { "id": "ee-emf-magneto", "name": "Magnetostatics", "subtopics": ["Biot-Savart", "Ampere law", "Inductance"], "expectedHours": 6 },
+        { "id": "ee-emf-wave", "name": "Electromagnetic Waves", "subtopics": ["Maxwell equations", "Poynting vector"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "ee-ss",
+      "name": "Signals and Systems",
+      "weightage": 10,
+      "topics": [
+        { "id": "ee-ss-fourier", "name": "Fourier Analysis", "subtopics": ["Fourier series", "Fourier transform"], "expectedHours": 6 },
+        { "id": "ee-ss-laplace", "name": "Laplace and Z Transforms", "subtopics": ["ROC", "Inverse transforms"], "expectedHours": 6 },
+        { "id": "ee-ss-sampling", "name": "Sampling", "subtopics": ["Nyquist theorem", "Aliasing"], "expectedHours": 4 },
+        { "id": "ee-ss-lti", "name": "LTI Systems", "subtopics": ["Convolution", "Stability"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "ee-mach",
+      "name": "Electrical Machines",
+      "weightage": 12,
+      "topics": [
+        { "id": "ee-mach-transformer", "name": "Transformers", "subtopics": ["Ideal transformer", "Losses", "Efficiency"], "expectedHours": 7 },
+        { "id": "ee-mach-dc", "name": "DC Machines", "subtopics": ["EMF equation", "Torque", "Speed control"], "expectedHours": 7 },
+        { "id": "ee-mach-im", "name": "Induction Machines", "subtopics": ["Slip", "Torque-slip curve", "Starting"], "expectedHours": 7 },
+        { "id": "ee-mach-sync", "name": "Synchronous Machines", "subtopics": ["EMF equation", "Voltage regulation", "Parallel operation"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "ee-ps",
+      "name": "Power Systems",
+      "weightage": 12,
+      "topics": [
+        { "id": "ee-ps-line", "name": "Transmission Lines", "subtopics": ["Line parameters", "Surge impedance", "Voltage regulation"], "expectedHours": 7 },
+        { "id": "ee-ps-loadflow", "name": "Load Flow", "subtopics": ["Per unit", "Bus classification", "Gauss-Seidel"], "expectedHours": 6 },
+        { "id": "ee-ps-fault", "name": "Fault Analysis", "subtopics": ["Symmetrical faults", "Sequence components"], "expectedHours": 6 },
+        { "id": "ee-ps-protection", "name": "Protection", "subtopics": ["Relays", "Circuit breakers", "Buchholz relay"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "ee-cs",
+      "name": "Control Systems",
+      "weightage": 10,
+      "topics": [
+        { "id": "ee-cs-model", "name": "System Modelling", "subtopics": ["Transfer function", "Block diagrams"], "expectedHours": 5 },
+        { "id": "ee-cs-response", "name": "Time Response", "subtopics": ["Damping", "Steady-state error"], "expectedHours": 6 },
+        { "id": "ee-cs-stability", "name": "Stability", "subtopics": ["Routh-Hurwitz", "Bode plot", "Root locus"], "expectedHours": 7 },
+        { "id": "ee-cs-controller", "name": "Controllers", "subtopics": ["P, I, D", "Lead and lag"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "ee-meas",
+      "name": "Electrical and Electronic Measurements",
+      "weightage": 7,
+      "topics": [
+        { "id": "ee-meas-analog", "name": "Analog Instruments", "subtopics": ["PMMC", "Moving iron", "Errors"], "expectedHours": 5 },
+        { "id": "ee-meas-bridge", "name": "Measurement Bridges", "subtopics": ["Wheatstone", "Maxwell", "Kelvin"], "expectedHours": 5 },
+        { "id": "ee-meas-digital", "name": "Digital Instruments", "subtopics": ["ADC", "DMM", "Resolution"], "expectedHours": 4 }
+      ]
+    },
+    {
+      "id": "ee-ade",
+      "name": "Analog and Digital Electronics",
+      "weightage": 8,
+      "topics": [
+        { "id": "ee-ade-diode", "name": "Diodes and Rectifiers", "subtopics": ["PN junction", "Rectifiers", "Filters"], "expectedHours": 5 },
+        { "id": "ee-ade-bjt", "name": "Transistor Amplifiers", "subtopics": ["Biasing", "Small signal", "Op-amps"], "expectedHours": 5 },
+        { "id": "ee-ade-digital", "name": "Digital Electronics", "subtopics": ["Boolean algebra", "Flip-flops", "Counters"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "ee-pe",
+      "name": "Power Electronics",
+      "weightage": 8,
+      "topics": [
+        { "id": "ee-pe-devices", "name": "Power Devices", "subtopics": ["SCR", "MOSFET", "IGBT"], "expectedHours": 5 },
+        { "id": "ee-pe-converter", "name": "Converters", "subtopics": ["Rectifiers", "Choppers", "Inverters"], "expectedHours": 7 },
+        { "id": "ee-pe-drives", "name": "Drives", "subtopics": ["DC drives", "AC drives"], "expectedHours": 4 }
+      ]
+    }
+  ]
+}

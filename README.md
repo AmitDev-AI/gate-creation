@@ -6,8 +6,9 @@ your mistakes.
 
 No account. No server. No ads. Your answers stay on your device.
 
-> **Status: development preview.** Step 0 (app shell, theme, PWA, offline install) is complete.
-> The question bank, practice mode, mock engine, analysis and planner are being built step by step.
+> **Status: development preview.** Steps 0–1 are complete: the app shell, theme, PWA and offline
+> install work, and every branch has a full syllabus plus 30 original sample questions.
+> Practice mode, the mock engine, analysis and the planner are being built step by step.
 > The home screen shows the live build status.
 
 ## Requirements
@@ -43,6 +44,7 @@ Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
 | `npm test` | Run the Vitest suite once |
 | `npm run test:watch` | Run tests in watch mode |
 | `npm run typecheck` | TypeScript only, no build |
+| `npm run validate:questions` | Check every syllabus and question bank (also runs before `test` and `build`) |
 | `npm run icons` | Regenerate the PWA icons (only needed if the mark changes) |
 
 ## Testing offline mode
@@ -66,11 +68,22 @@ src/
   hooks/       theme, online status, install prompt, storage report
   lib/         small pure helpers (formatting, class names, storage probes)
   domain/      pure logic: scoring, timer, weak topics, planner (added in later steps)
-  data/        syllabus + question JSON (added in step 1)
+  data/        syllabus + question JSON for GA, CSE, ECE, EE, ME and CE
   db/          Dexie schema and repository (added in later steps)
-scripts/       icon generator, service-worker template, build-time precache
+scripts/       question validator, icon generator, service-worker build
+docs/          question format and contribution rules
 public/        manifest, icons, favicon
 ```
+
+## Content
+
+Every branch has a syllabus (`src/data/syllabus/`) and a bank of 30 original sample questions
+(`src/data/questions/`). General Aptitude is shared by all branches and has 10 questions.
+That is 160 questions in total, half 1-mark and half 2-mark, mixing MCQ, MSQ and NAT.
+
+Sample questions are written for this project and are labelled `source: "sample"`. They are not
+previous-year GATE questions. See [`docs/QUESTION_FORMAT.md`](docs/QUESTION_FORMAT.md) for the
+schema, marking rules and how to add questions, and run `npm run validate:questions` after editing.
 
 ## Principles
 

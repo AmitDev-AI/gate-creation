@@ -1,0 +1,180 @@
+{
+  "branch": "GA",
+  "version": "2026.1",
+  "questions": [
+    {
+      "id": "ga-verbal-001",
+      "branch": "GA",
+      "subject": "ga-verbal",
+      "topic": "ga-verbal-vocab",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "source": "sample",
+      "question": "Choose the word that is most nearly opposite in meaning to \"frugal\".",
+      "options": [
+        { "id": "A", "text": "Thrifty" },
+        { "id": "B", "text": "Extravagant" },
+        { "id": "C", "text": "Cautious" },
+        { "id": "D", "text": "Modest" }
+      ],
+      "answer": "B",
+      "explanation": "Frugal means economical or sparing with money. Its opposite is extravagant, which means spending wastefully. Thrifty is a synonym, while cautious and modest are unrelated in meaning.",
+      "tags": ["vocabulary", "antonyms"]
+    },
+    {
+      "id": "ga-quant-001",
+      "branch": "GA",
+      "subject": "ga-quant",
+      "topic": "ga-quant-arithmetic",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "source": "sample",
+      "question": "A train covers 240 km in 3 hours. What is its average speed in km/h?",
+      "answer": { "min": 80, "max": 80 },
+      "unit": "km/h",
+      "explanation": "Average speed is total distance divided by total time. Here that is 240 km divided by 3 hours, which equals 80 km/h.",
+      "tags": ["speed", "distance"]
+    },
+    {
+      "id": "ga-quant-002",
+      "branch": "GA",
+      "subject": "ga-quant",
+      "topic": "ga-quant-arithmetic",
+      "type": "NAT",
+      "marks": 1,
+      "difficulty": "easy",
+      "source": "sample",
+      "question": "A student scores 20% in a test worth 250 marks. How many marks does the student score?",
+      "answer": { "min": 50, "max": 50 },
+      "unit": "marks",
+      "explanation": "Twenty percent of 250 is (20 divided by 100) multiplied by 250, which is 0.2 times 250, giving 50 marks.",
+      "tags": ["percentage"]
+    },
+    {
+      "id": "ga-analytical-001",
+      "branch": "GA",
+      "subject": "ga-analytical",
+      "topic": "ga-analytical-series",
+      "type": "MCQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "source": "sample",
+      "question": "Find the next number in the series: 2, 6, 12, 20, 30, ?",
+      "options": [
+        { "id": "A", "text": "36" },
+        { "id": "B", "text": "40" },
+        { "id": "C", "text": "42" },
+        { "id": "D", "text": "44" }
+      ],
+      "answer": "C",
+      "explanation": "The differences between consecutive terms are 4, 6, 8 and 10, so the next difference is 12. Adding 12 to 30 gives 42. Each term also equals n(n+1) for n = 1, 2, 3, ...",
+      "tags": ["number-series"]
+    },
+    {
+      "id": "ga-quant-003",
+      "branch": "GA",
+      "subject": "ga-quant",
+      "topic": "ga-quant-number",
+      "type": "MSQ",
+      "marks": 1,
+      "difficulty": "easy",
+      "source": "sample",
+      "question": "Which of the following numbers are prime?",
+      "options": [
+        { "id": "A", "text": "2" },
+        { "id": "B", "text": "9" },
+        { "id": "C", "text": "11" },
+        { "id": "D", "text": "15" }
+      ],
+      "answer": ["A", "C"],
+      "explanation": "A prime number has exactly two positive factors, 1 and itself. Both 2 and 11 satisfy this. Since 9 = 3 x 3 and 15 = 3 x 5, those two are composite.",
+      "tags": ["primes"]
+    },
+    {
+      "id": "ga-quant-004",
+      "branch": "GA",
+      "subject": "ga-quant",
+      "topic": "ga-quant-arithmetic",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "source": "sample",
+      "question": "A shopkeeper buys an article for Rs 400 and sells it at a profit of 5%. What is the selling price in rupees?",
+      "answer": { "min": 420, "max": 420 },
+      "unit": "Rs",
+      "explanation": "Profit is 5% of the cost price, which is 0.05 times 400 = 20 rupees. The selling price is therefore 400 + 20 = 420 rupees.",
+      "tags": ["profit-loss", "percentage"]
+    },
+    {
+      "id": "ga-spatial-001",
+      "branch": "GA",
+      "subject": "ga-spatial",
+      "topic": "ga-spatial-3d",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "source": "sample",
+      "question": "A cube has a total surface area of 54 square centimetres. What is the length of one edge in centimetres?",
+      "answer": { "min": 3, "max": 3 },
+      "unit": "cm",
+      "explanation": "A cube has six identical square faces, so 6a squared equals 54, giving a squared = 9. The edge length is therefore 3 cm.",
+      "tags": ["cube", "surface-area"]
+    },
+    {
+      "id": "ga-analytical-002",
+      "branch": "GA",
+      "subject": "ga-analytical",
+      "topic": "ga-analytical-logic",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "source": "sample",
+      "question": "Five students P, Q, R, S and T have different heights. Q is taller than P. T is taller than Q but shorter than S. R is shorter than S. Who is the tallest?",
+      "options": [
+        { "id": "A", "text": "P" },
+        { "id": "B", "text": "Q" },
+        { "id": "C", "text": "R" },
+        { "id": "D", "text": "S" }
+      ],
+      "answer": "D",
+      "explanation": "T is taller than Q and Q is taller than P, so T > Q > P. S is taller than T, which makes S taller than P, Q and T. R is shorter than S, so S is the tallest overall.",
+      "tags": ["ordering", "ranking"]
+    },
+    {
+      "id": "ga-verbal-002",
+      "branch": "GA",
+      "subject": "ga-verbal",
+      "topic": "ga-verbal-grammar",
+      "type": "MCQ",
+      "marks": 2,
+      "difficulty": "medium",
+      "source": "sample",
+      "question": "Choose the grammatically correct sentence.",
+      "options": [
+        { "id": "A", "text": "He do not like coffee." },
+        { "id": "B", "text": "He does not likes coffee." },
+        { "id": "C", "text": "He does not like coffee." },
+        { "id": "D", "text": "He not like coffee." }
+      ],
+      "answer": "C",
+      "explanation": "With a third-person singular subject, the present simple negative is formed with \"does not\" followed by the base verb. Only option C follows that pattern; the others misuse the auxiliary or the verb form.",
+      "tags": ["grammar", "subject-verb-agreement"]
+    },
+    {
+      "id": "ga-quant-005",
+      "branch": "GA",
+      "subject": "ga-quant",
+      "topic": "ga-quant-number",
+      "type": "NAT",
+      "marks": 2,
+      "difficulty": "medium",
+      "source": "sample",
+      "question": "The average of five numbers is 20. When one number is removed, the average of the remaining four numbers becomes 18. What number was removed?",
+      "answer": { "min": 28, "max": 28 },
+      "explanation": "The five numbers sum to 5 times 20 = 100. The remaining four sum to 4 times 18 = 72. The removed number is the difference, 100 - 72 = 28.",
+      "tags": ["average"]
+    }
+  ]
+}

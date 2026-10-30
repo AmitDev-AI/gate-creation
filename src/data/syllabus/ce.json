@@ -1,0 +1,93 @@
+{
+  "branch": "CE",
+  "name": "Civil Engineering",
+  "version": "2026.1",
+  "subjects": [
+    {
+      "id": "ce-em",
+      "name": "Engineering Mathematics",
+      "weightage": 13,
+      "topics": [
+        { "id": "ce-em-linear", "name": "Linear Algebra", "subtopics": ["Matrices", "Eigenvalues"], "expectedHours": 5 },
+        { "id": "ce-em-calculus", "name": "Calculus", "subtopics": ["Limits", "Maxima and minima", "Integration"], "expectedHours": 6 },
+        { "id": "ce-em-de", "name": "Differential Equations", "subtopics": ["First order", "Higher order"], "expectedHours": 5 },
+        { "id": "ce-em-probability", "name": "Probability and Statistics", "subtopics": ["Distributions", "Mean and variance"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "ce-str",
+      "name": "Structural Engineering",
+      "weightage": 15,
+      "topics": [
+        { "id": "ce-str-som", "name": "Mechanics of Materials", "subtopics": ["Stress and strain", "Bending", "Shear"], "expectedHours": 8 },
+        { "id": "ce-str-analysis", "name": "Structural Analysis", "subtopics": ["Trusses", "Beams", "Influence lines"], "expectedHours": 8 },
+        { "id": "ce-str-concrete", "name": "Concrete Structures", "subtopics": ["Working stress", "Limit state", "Modular ratio"], "expectedHours": 7 },
+        { "id": "ce-str-steel", "name": "Steel Structures", "subtopics": ["Bolted joints", "Welded joints", "Beams"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "ce-geo",
+      "name": "Geotechnical Engineering",
+      "weightage": 12,
+      "topics": [
+        { "id": "ce-geo-properties", "name": "Soil Properties", "subtopics": ["Index properties", "Void ratio", "Unit weight"], "expectedHours": 7 },
+        { "id": "ce-geo-consolidation", "name": "Consolidation", "subtopics": ["Coefficient of consolidation", "Settlement"], "expectedHours": 6 },
+        { "id": "ce-geo-shear", "name": "Shear Strength", "subtopics": ["Mohr-Coulomb", "Direct shear", "Triaxial"], "expectedHours": 6 },
+        { "id": "ce-geo-foundation", "name": "Foundations", "subtopics": ["Bearing capacity", "Piles"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "ce-wr",
+      "name": "Water Resources Engineering",
+      "weightage": 12,
+      "topics": [
+        { "id": "ce-wr-hydro", "name": "Hydrology", "subtopics": ["Rainfall", "Runoff", "Unit hydrograph"], "expectedHours": 7 },
+        { "id": "ce-wr-flow", "name": "Open Channel Flow", "subtopics": ["Specific energy", "Froude number", "Hydraulic jump"], "expectedHours": 6 },
+        { "id": "ce-wr-irrigation", "name": "Irrigation", "subtopics": ["Duty", "Delta", "Canals"], "expectedHours": 5 },
+        { "id": "ce-wr-dams", "name": "Dams and Spillways", "subtopics": ["Gravity dam", "Spillway types"], "expectedHours": 4 }
+      ]
+    },
+    {
+      "id": "ce-env",
+      "name": "Environmental Engineering",
+      "weightage": 12,
+      "topics": [
+        { "id": "ce-env-water", "name": "Water Treatment", "subtopics": ["Sedimentation", "Filtration", "Disinfection"], "expectedHours": 7 },
+        { "id": "ce-env-waste", "name": "Wastewater Treatment", "subtopics": ["BOD", "Activated sludge", "Trickling filter"], "expectedHours": 7 },
+        { "id": "ce-env-air", "name": "Air and Noise Pollution", "subtopics": ["Pollutants", "Greenhouse gases"], "expectedHours": 5 },
+        { "id": "ce-env-solid", "name": "Solid Waste", "subtopics": ["Collection", "Disposal"], "expectedHours": 3 }
+      ]
+    },
+    {
+      "id": "ce-tr",
+      "name": "Transportation Engineering",
+      "weightage": 12,
+      "topics": [
+        { "id": "ce-tr-highway", "name": "Highway Geometrics", "subtopics": ["Superelevation", "Sight distance", "Transition curve"], "expectedHours": 7 },
+        { "id": "ce-tr-materials", "name": "Pavement Materials", "subtopics": ["Aggregate tests", "Bitumen tests"], "expectedHours": 6 },
+        { "id": "ce-tr-pavement", "name": "Pavement Design", "subtopics": ["Flexible pavement", "CBR"], "expectedHours": 6 },
+        { "id": "ce-tr-traffic", "name": "Traffic Engineering", "subtopics": ["Speed", "Volume", "Signal design"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "ce-gm",
+      "name": "Geomatics Engineering",
+      "weightage": 10,
+      "topics": [
+        { "id": "ce-gm-survey", "name": "Surveying", "subtopics": ["Chain surveying", "Compass", "Theodolite"], "expectedHours": 7 },
+        { "id": "ce-gm-leveling", "name": "Levelling", "subtopics": ["Reduced levels", "Contours"], "expectedHours": 5 },
+        { "id": "ce-gm-modern", "name": "Modern Surveying", "subtopics": ["Total station", "GPS", "Photogrammetry"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "ce-cm",
+      "name": "Construction Materials and Management",
+      "weightage": 14,
+      "topics": [
+        { "id": "ce-cm-materials", "name": "Construction Materials", "subtopics": ["Cement", "Concrete", "Bricks", "Steel"], "expectedHours": 8 },
+        { "id": "ce-cm-management", "name": "Construction Management", "subtopics": ["CPM", "PERT", "Cost estimation"], "expectedHours": 7 },
+        { "id": "ce-cm-equipment", "name": "Construction Equipment", "subtopics": ["Earthmoving", "Concrete equipment"], "expectedHours": 4 }
+      ]
+    }
+  ]
+}

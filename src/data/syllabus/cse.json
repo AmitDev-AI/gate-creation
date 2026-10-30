@@ -1,0 +1,125 @@
+{
+  "branch": "CSE",
+  "name": "Computer Science and Information Technology",
+  "version": "2026.1",
+  "subjects": [
+    {
+      "id": "cse-em",
+      "name": "Engineering Mathematics",
+      "weightage": 15,
+      "topics": [
+        { "id": "cse-em-discrete", "name": "Discrete Mathematics", "subtopics": ["Propositional logic", "Sets and relations", "Counting", "Graph theory"], "expectedHours": 10 },
+        { "id": "cse-em-linear", "name": "Linear Algebra", "subtopics": ["Matrices", "Determinants", "Eigenvalues and eigenvectors", "Rank"], "expectedHours": 8 },
+        { "id": "cse-em-calculus", "name": "Calculus", "subtopics": ["Limits", "Continuity", "Maxima and minima", "Integration"], "expectedHours": 8 },
+        { "id": "cse-em-probability", "name": "Probability", "subtopics": ["Conditional probability", "Bayes theorem", "Random variables", "Distributions"], "expectedHours": 9 }
+      ]
+    },
+    {
+      "id": "cse-dl",
+      "name": "Digital Logic",
+      "weightage": 6,
+      "topics": [
+        { "id": "cse-dl-number", "name": "Number Systems", "subtopics": ["Binary arithmetic", "Signed numbers", "Codes"], "expectedHours": 4 },
+        { "id": "cse-dl-boolean", "name": "Boolean Algebra", "subtopics": ["Minimization", "K-maps", "Logic gates"], "expectedHours": 5 },
+        { "id": "cse-dl-combinational", "name": "Combinational Circuits", "subtopics": ["Adders", "Multiplexers", "Decoders"], "expectedHours": 5 },
+        { "id": "cse-dl-sequential", "name": "Sequential Circuits", "subtopics": ["Flip-flops", "Counters", "Registers"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "cse-coa",
+      "name": "Computer Organization and Architecture",
+      "weightage": 9,
+      "topics": [
+        { "id": "cse-coa-cache", "name": "Cache and Memory Hierarchy", "subtopics": ["Direct mapped", "Set associative", "Replacement policies"], "expectedHours": 7 },
+        { "id": "cse-coa-pipeline", "name": "Pipelining", "subtopics": ["Speedup", "Hazards", "Throughput"], "expectedHours": 6 },
+        { "id": "cse-coa-addressing", "name": "Addressing Modes", "subtopics": ["Immediate", "Indirect", "PC relative"], "expectedHours": 4 },
+        { "id": "cse-coa-io", "name": "I/O and Interrupts", "subtopics": ["DMA", "Interrupt handling", "Bus arbitration"], "expectedHours": 4 }
+      ]
+    },
+    {
+      "id": "cse-pds",
+      "name": "Programming and Data Structures",
+      "weightage": 13,
+      "topics": [
+        { "id": "cse-pds-array", "name": "Arrays and Strings", "subtopics": ["Searching", "Rotation", "String matching"], "expectedHours": 6 },
+        { "id": "cse-pds-stack", "name": "Stacks and Queues", "subtopics": ["Postfix evaluation", "Circular queue", "Applications"], "expectedHours": 5 },
+        { "id": "cse-pds-linked", "name": "Linked Lists", "subtopics": ["Singly linked", "Doubly linked", "Cycle detection"], "expectedHours": 5 },
+        { "id": "cse-pds-tree", "name": "Trees", "subtopics": ["Binary trees", "BST", "Traversals", "Heaps"], "expectedHours": 8 },
+        { "id": "cse-pds-hash", "name": "Hashing", "subtopics": ["Collision resolution", "Load factor", "Open addressing"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "cse-algo",
+      "name": "Algorithms",
+      "weightage": 11,
+      "topics": [
+        { "id": "cse-algo-sorting", "name": "Sorting", "subtopics": ["Merge sort", "Quick sort", "Heap sort", "Stability"], "expectedHours": 7 },
+        { "id": "cse-algo-greedy", "name": "Greedy Algorithms", "subtopics": ["Fractional knapsack", "Huffman coding", "Interval scheduling"], "expectedHours": 6 },
+        { "id": "cse-algo-dp", "name": "Dynamic Programming", "subtopics": ["LCS", "Matrix chain", "Subset sum"], "expectedHours": 8 },
+        { "id": "cse-algo-graph", "name": "Graph Algorithms", "subtopics": ["BFS", "DFS", "Dijkstra", "MST"], "expectedHours": 8 },
+        { "id": "cse-algo-complexity", "name": "Complexity Analysis", "subtopics": ["Asymptotic notation", "Recurrences", "Lower bounds"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "cse-toc",
+      "name": "Theory of Computation",
+      "weightage": 10,
+      "topics": [
+        { "id": "cse-toc-regular", "name": "Regular Languages", "subtopics": ["DFA", "NFA", "Closure properties", "Pumping lemma"], "expectedHours": 8 },
+        { "id": "cse-toc-cfg", "name": "Context-Free Grammars", "subtopics": ["Derivations", "Ambiguity", "Normal forms"], "expectedHours": 7 },
+        { "id": "cse-toc-pda", "name": "Pushdown Automata", "subtopics": ["Deterministic PDA", "Acceptance"], "expectedHours": 5 },
+        { "id": "cse-toc-tm", "name": "Turing Machines", "subtopics": ["Variants", "Church-Turing thesis"], "expectedHours": 5 },
+        { "id": "cse-toc-decidable", "name": "Decidability", "subtopics": ["Recursive languages", "Reductions", "Undecidability"], "expectedHours": 6 }
+      ]
+    },
+    {
+      "id": "cse-cd",
+      "name": "Compiler Design",
+      "weightage": 7,
+      "topics": [
+        { "id": "cse-cd-lex", "name": "Lexical Analysis", "subtopics": ["Tokens", "Regular expressions", "Finite automata"], "expectedHours": 4 },
+        { "id": "cse-cd-parse", "name": "Parsing", "subtopics": ["LL(1)", "LR", "Ambiguity"], "expectedHours": 7 },
+        { "id": "cse-cd-sdt", "name": "Syntax-Directed Translation", "subtopics": ["Attributes", "Semantic actions"], "expectedHours": 4 },
+        { "id": "cse-cd-codegen", "name": "Code Generation", "subtopics": ["Three-address code", "Register allocation"], "expectedHours": 4 },
+        { "id": "cse-cd-opt", "name": "Optimization", "subtopics": ["Constant folding", "Loop optimization"], "expectedHours": 4 }
+      ]
+    },
+    {
+      "id": "cse-os",
+      "name": "Operating Systems",
+      "weightage": 10,
+      "topics": [
+        { "id": "cse-os-process", "name": "Processes and Threads", "subtopics": ["Process states", "Context switch", "Threads"], "expectedHours": 5 },
+        { "id": "cse-os-sched", "name": "CPU Scheduling", "subtopics": ["FCFS", "SJF", "Round robin", "Waiting time"], "expectedHours": 6 },
+        { "id": "cse-os-sync", "name": "Synchronization", "subtopics": ["Semaphores", "Mutex", "Classic problems"], "expectedHours": 6 },
+        { "id": "cse-os-memory", "name": "Memory Management", "subtopics": ["Paging", "Segmentation", "Page replacement"], "expectedHours": 7 },
+        { "id": "cse-os-deadlock", "name": "Deadlocks", "subtopics": ["Necessary conditions", "Banker's algorithm"], "expectedHours": 5 },
+        { "id": "cse-os-fs", "name": "File Systems", "subtopics": ["Inodes", "Allocation methods", "Disk scheduling"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "cse-db",
+      "name": "Databases",
+      "weightage": 9,
+      "topics": [
+        { "id": "cse-db-relational", "name": "Relational Model", "subtopics": ["Keys", "Relational algebra", "Integrity constraints"], "expectedHours": 6 },
+        { "id": "cse-db-sql", "name": "SQL", "subtopics": ["Joins", "Aggregation", "Nested queries"], "expectedHours": 6 },
+        { "id": "cse-db-normal", "name": "Normalization", "subtopics": ["Functional dependencies", "2NF", "3NF", "BCNF"], "expectedHours": 5 },
+        { "id": "cse-db-txn", "name": "Transactions", "subtopics": ["ACID", "Serializability", "Concurrency control"], "expectedHours": 6 },
+        { "id": "cse-db-index", "name": "Indexing", "subtopics": ["B+ trees", "Hashing", "Dense and sparse indexes"], "expectedHours": 5 }
+      ]
+    },
+    {
+      "id": "cse-cn",
+      "name": "Computer Networks",
+      "weightage": 10,
+      "topics": [
+        { "id": "cse-cn-layer", "name": "Protocol Layers", "subtopics": ["OSI", "TCP/IP model", "Encapsulation"], "expectedHours": 4 },
+        { "id": "cse-cn-tcp", "name": "TCP and UDP", "subtopics": ["Congestion control", "Flow control", "Handshake"], "expectedHours": 7 },
+        { "id": "cse-cn-ip", "name": "IP Addressing", "subtopics": ["Subnetting", "CIDR", "Fragmentation"], "expectedHours": 7 },
+        { "id": "cse-cn-routing", "name": "Routing", "subtopics": ["Distance vector", "Link state", "BGP"], "expectedHours": 5 },
+        { "id": "cse-cn-app", "name": "Application Protocols", "subtopics": ["DNS", "HTTP", "SMTP", "DHCP"], "expectedHours": 4 }
+      ]
+    }
+  ]
+}
