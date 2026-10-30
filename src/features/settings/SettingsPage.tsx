@@ -1,8 +1,11 @@
 import { useState } from 'react';
+import { useProfile } from '../../app/ProfileProvider';
 import { Badge } from '../../components/Badge';
-import { Button } from '../../components/Button';
+import { Button, ButtonLink } from '../../components/Button';
 import { Card } from '../../components/Card';
+import { StorageWarning } from '../../components/StorageWarning';
 import { MonitorIcon, MoonIcon, RefreshIcon, SunIcon, TrashIcon } from '../../components/icons';
+import { getBranchInfo } from '../../data/catalog';
 import { useStorageReport } from '../../hooks/useStorageReport';
 import { useTheme, type Theme } from '../../hooks/useTheme';
 import { APP_NAME, APP_VERSION } from '../../lib/app';
@@ -19,8 +22,13 @@ const THEME_OPTIONS: ReadonlyArray<{ value: Theme; label: string; hint: string; 
 export function SettingsPage() {
   const { theme, setTheme } = useTheme();
   const { report, loading, refresh } = useStorageReport();
+  const { branch, forgetProfile } = useProfile();
   const [confirmClear, setConfirmClear] = useState(false);
   const [cacheMessage, setCacheMessage] = useState<string | null>(null);
+  const [confirmForget, setConfirmForget] = useState(false);
+  const [forgetMessage, setForgetMessage] = useState<string | null>(null);
+
+  const info = branch ? getBranchInfo(branch) : null;
 
   const handleClearCache = async () => {
     const deleted = await clearOfflineCaches();
@@ -32,6 +40,12 @@ export function SettingsPage() {
     );
   };
 
+  const handleForget = async () => {
+    await forgetProfile();
+    setConfirmForget(false);
+    setForgetMessage('Branch removed from this browser.');
+  };
+
   return (
     <div className="container-page max-w-3xl space-y-6">
       <div>
@@ -40,6 +54,24 @@ export function SettingsPage() {
           Everything here is stored on this device only.
         </p>
       </div>
+
+      <StorageWarning />
+
+      <Card>
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <h2 className="text-base font-semibold">Your branch</h2>
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+              {info
+                ? `${info.code} — ${info.name}`
+                : 'Not set yet. Choose a branch to load its syllabus and question bank.'}
+            </p>
+          </div>
+          <ButtonLink to="/setup" variant="secondary" size="sm">
+            {info ? 'Change branch' : 'Choose branch'}
+          </ButtonLink>
+        </div>
+      </Card>
 
       <Card>
         <fieldset>
@@ -137,6 +169,36 @@ export function SettingsPage() {
         {cacheMessage && (
           <p className="mt-3 text-sm text-slate-600 dark:text-slate-300" role="status">
             {cacheMessage}
+          </p>
+        )}
+      </Card>
+
+      <Card>
+        <h2 className="text-base font-semibold">Reset this device</h2>
+        <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+          Removes the branch saved in this browser. Only the branch is stored so far, so nothing
+          else is lost. Your choice will be needed again on the next visit.
+        </p>
+
+        <div className="mt-3 flex flex-wrap items-center gap-2">
+          {confirmForget ? (
+            <>
+              <Button variant="danger" size="sm" onClick={() => void handleForget()}>
+                <TrashIcon /> Yes, forget this device
+              </Button>
+              <Button variant="ghost" size="sm" onClick={() => setConfirmForget(false)}>
+                Cancel
+              </Button>
+            </>
+          ) : (
+            <Button variant="secondary" size="sm" onClick={() => setConfirmForget(true)}>
+              <TrashIcon /> Forget this device
+            </Button>
+          )}
+        </div>
+        {forgetMessage && (
+          <p className="mt-3 text-sm text-slate-600 dark:text-slate-300" role="status">
+            {forgetMessage}
           </p>
         )}
       </Card>

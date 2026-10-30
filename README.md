@@ -6,10 +6,11 @@ your mistakes.
 
 No account. No server. No ads. Your answers stay on your device.
 
-> **Status: development preview.** Steps 0–1 are complete: the app shell, theme, PWA and offline
-> install work, and every branch has a full syllabus plus 30 original sample questions.
-> Practice mode, the mock engine, analysis and the planner are being built step by step.
-> The home screen shows the live build status.
+> **Status: development preview.** Steps 0–2 are complete: the app shell, theme, PWA and offline
+> install work, every branch has a full syllabus plus 30 original sample questions, and you can
+> pick a branch, browse its subjects and see live question coverage. Practice mode, the mock
+> engine, analysis and the planner are being built step by step. The home screen shows the live
+> build status.
 
 ## Requirements
 
@@ -58,22 +59,37 @@ The service worker is only registered in production builds.
 5. DevTools → **Network** → set **Offline**, then reload. The app should still open.
 6. Optional: DevTools → **Application → Manifest** → install, then launch it from the Start menu.
 
+## Using the app
+
+1. Open the app and choose your branch (CSE, ECE, EE, ME or CE) on `/setup`.
+2. Browse your subjects on `/subjects`; every subject shows its syllabus weightage and how many
+   sample questions the bundled bank currently holds.
+3. Open a subject on `/subjects/:subjectId` to see its topics, subtopics and per-topic coverage.
+4. Change the branch or forget this device in `/settings`.
+
+The branch is the only thing stored so far. It lives in a single IndexedDB row and is restored on
+the next visit. If a browser blocks IndexedDB (private windows, some locked-down setups) the app
+still works for the session and shows a warning instead of trapping you on the setup form.
+
 ## Project structure
 
 ```
 src/
-  app/         router, error boundary, build roadmap
-  components/  shared UI (buttons, cards, badges, icons, shell)
-  features/    one folder per screen
+  app/         router, profile provider, error boundary, build roadmap
+  components/  shared UI (buttons, cards, badges, coverage bar, icons, shell)
+  features/    one folder per screen (home, setup, subjects, settings, not-found)
   hooks/       theme, online status, install prompt, storage report
   lib/         small pure helpers (formatting, class names, storage probes)
-  domain/      pure logic: scoring, timer, weak topics, planner (added in later steps)
-  data/        syllabus + question JSON for GA, CSE, ECE, EE, ME and CE
-  db/          Dexie schema and repository (added in later steps)
+  domain/      shared data types; pure logic (scoring, timer, planner) comes in later steps
+  data/        catalog API + syllabus and question JSON for GA, CSE, ECE, EE, ME and CE
+  db/          Dexie schema and profile repository
 scripts/       question validator, icon generator, service-worker build
 docs/          question format and contribution rules
 public/        manifest, icons, favicon
 ```
+
+The build splits `node_modules` into `vendor` and `src/data` into `content`, so a question-bank
+update does not invalidate the cached framework chunk and every file stays small.
 
 ## Content
 

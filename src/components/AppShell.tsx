@@ -54,13 +54,18 @@ export function AppShell() {
         <div className="container-page flex h-16 items-center justify-between gap-3">
           <NavLink to="/" className="flex items-center gap-2.5 rounded-lg" aria-label={`${APP_NAME} home`}>
             <LogoMark />
-            <span className="text-[15px] font-semibold tracking-tight sm:text-base">{APP_NAME}</span>
+            <span className="hidden text-[15px] font-semibold tracking-tight sm:inline sm:text-base">
+              {APP_NAME}
+            </span>
           </NavLink>
 
           <div className="flex items-center gap-1">
             <nav aria-label="Main" className="flex items-center gap-0.5">
               <NavLink to="/" end className={navLinkClass}>
                 Home
+              </NavLink>
+              <NavLink to="/subjects" className={navLinkClass}>
+                Subjects
               </NavLink>
               <NavLink to="/settings" className={navLinkClass}>
                 Settings
